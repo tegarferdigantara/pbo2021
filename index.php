@@ -16,7 +16,7 @@ $andri->tanggal_lahir = "10-10-2001";
 $andri->jenis_kelamin = "Laki-laki<br>";
 
 $bayu->nim = "H1101191047"; 
-$bayu->nama = "Tegar Ferdigantara";
+$bayu->nama = "Bayu Firmadi";
 $bayu->tanggal_lahir = "12-02-2001";
 $bayu->jenis_kelamin = "Laki-laki<br>";
 ?>
