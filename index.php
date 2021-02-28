@@ -15,7 +15,6 @@ $bayu = new Mahasiswa('H1101191047','Bayu Firmadi','12-02-2001','Pria');
 // $tegar->tanggal_lahir = "24-09-2001";
 // $tegar->jenis_kelamin = "Laki-laki<br>";
 
-<<<<<<< HEAD
 // $andri->nim = "H1101191070"; 
 // $andri->nama = "Andri Maulana";
 // $andri->tanggal_lahir = "01-01-2001";
@@ -53,10 +52,4 @@ $bayu = new Mahasiswa('H1101191047','Bayu Firmadi','12-02-2001','Pria');
 
 </body>
 </html>
-=======
-$bayu->nim = "H1101191047"; 
-$bayu->nama = "Bayu Firmadi";
-$bayu->tanggal_lahir = "12-02-2001";
-$bayu->jenis_kelamin = "Laki-laki<br>";
-?>
->>>>>>> 9e5555cfafa9ba551c5300e399a81dc975544eed
+
