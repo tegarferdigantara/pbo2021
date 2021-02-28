@@ -1,5 +1,6 @@
 <?php 
-class Pegawai {
+require_once('User.php');
+class Pegawai extends User{
 	public $nip,
 		   $nama,
 		   $no_hp,

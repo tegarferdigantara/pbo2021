@@ -1,5 +1,6 @@
 <?php
-class Mahasiswa {
+require_once('User.php');
+class Mahasiswa extends User {
 	public $nim;
 	public $nama;
 	public $tanggal_lahir;
