@@ -1,12 +1,12 @@
 <?php
 require_once('User.php');
 class Mahasiswa extends User {
-	public $nim;
-	public $nama;
-	public $tanggal_lahir;
-	public $jenis_kelamin;
+	protected $nim,
+		   $nama,
+		   $tanggal_lahir,
+		   $jenis_kelamin;
  
- 	function __construct($nim,$nama,$tgl,$jk){
+ 	public function __construct($nim,$nama,$tgl,$jk){
 	 	$this->nim = $nim;
 	    $this->nama = $nama;
 	    $this->tanggal_lahir = $tgl;
@@ -15,7 +15,7 @@ class Mahasiswa extends User {
  	public function tampilkanAngkatan(){
 	  	$angkatan = $this->nim;
 	  	$sub = (substr($angkatan,5,2));
-	  	echo 'Angkatan = ',$sub;  	
+	  	echo 'Angkatan = ',$sub;
  }
  
  	public function tampilkanUmur(){
@@ -25,7 +25,29 @@ class Mahasiswa extends User {
  
  	public function tampilkanNama($nama){
    		echo $this->nama;
-
  }
+ 	public function getNim(){
+		 return $this->nim;
+	}
+	public function getNama(){
+		return $this->nama;
+	}
+	public function getTanggalLahir(){
+		return $this->tanggal_lahir;
+	}
+	public function getJenisKelamin(){
+		return $this->jenis_kelamin;
+	}
+	public function setNim($nim){
+		$this->nim = $nim;
+	}
+	public function setNama($nama){
+		$this->nama = $nama;
+	}
+	public function setTanggalLahir($tanggal_lahir){
+		return $this->tanggal_lahir = $tanggal_lahir;
+	}
+	public function setJenisKelamin($jenis_kelamin){
+		return $this->jenis_kelamin =$jenis_kelamin;
+	}
 }
-?>
