@@ -1,6 +1,6 @@
 <?php
 
-namespace application\backend;
+namespace App;
 
 class MyDate
 {
@@ -44,15 +44,5 @@ class MyDate
     public function setYear($year)
     {
         $this->year = $year;
-    }
-}
-
-namespace application\frontend;
-
-class MyDate
-{
-    public function tanggal2()
-    {
-        return "24-09-2001";
     }
 }

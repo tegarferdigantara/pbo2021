@@ -1,8 +1,6 @@
 <?php
 
-namespace application\backend;
-
-require_once("Mahasiswa.php");
+namespace App;
 
 class MahasiswaBaru extends Mahasiswa
 {
