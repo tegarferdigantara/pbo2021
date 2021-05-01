@@ -8,13 +8,25 @@ class Mahasiswa extends User
 		$nama,
 		$tanggal_lahir,
 		$jenis_kelamin;
-
+	const AKTIF = 1;
+	const NON_AKTIF = 0;
+	public static $status = self::AKTIF;
 	public function __construct($nim, $nama, $tgl, $jk)
 	{
 		$this->nim = $nim;
 		$this->nama = $nama;
 		$this->tanggal_lahir = $tgl;
 		$this->jenis_kelamin = $jk;
+	}
+	public static function bergerak()
+	{
+		echo "agen solusi, bukan agen perubahan";
+	}
+
+	final public function tuntaskan()
+	{
+		self::bergerak();
+		echo "\nMemperbaiki menjadi lebih baik";
 	}
 	public function tampilkanAngkatan()
 	{
@@ -64,5 +76,9 @@ class Mahasiswa extends User
 	public function setJenisKelamin($jenis_kelamin)
 	{
 		return $this->jenis_kelamin = $jenis_kelamin;
+	}
+	public static function hitungSks($sks, $bobot)
+	{
+		return $sks * $bobot;
 	}
 }
